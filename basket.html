@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>장바구니</title>
+  <link href="headercss.css" type="text/css" rel="stylesheet">
+  <link href="footercss.css" type="text/css" rel="stylesheet">
+  <style>
+  #basketcontainer {
+    width: 1070px;
+    height: 350px;
+    float: left;
+  }
+  #basketintro {
+    width: 300px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    border-bottom: 2px solid black;
+  }
+  #baskettext {
+    font: normal bold 36px consolas, impect;
+    color: red;
+  }
+  #basketsection {
+    float: left;
+    width: 800px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+  #tablehead {
+    width: 800px;
+    height: 30px;
+    float: left;
+  }
+  #tableheadtext {
+    font: normal bold 20px consolas, impect;
+  }
+  #tablebodytext {
+    font: normal bold 30px consolas, impect;
+    color: red;
+  }
+  #tablebodytext1 {
+    font: normal bold 30px consolas, impect;
+    color: green;
+  }
+  #tablebodytext2 {
+    font: normal 20px consolas, impect;
+  }
+  #tableheadtext1 {
+    width: 100px;
+    height: 30px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tableheadtext2 {
+    width: 500px;
+    height: 30px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tableheadtext3 {
+    width: 90px;
+    height: 30px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tableheadtext4 {
+    width: 100px;
+    height: 30px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tablebodybox {
+    width: 800px;
+    height: 40px;
+    float: left;
+  }
+  #tablebody1 {
+    width: 100px;
+    height: 40px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tablebody2 {
+    width: 500px;
+    height: 40px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tablebody3 {
+    width: 90px;
+    height: 40px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tablebody4 {
+    width: 100px;
+    height: 40px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tablebodybox2 {
+    width: 800px;
+    height: 42px;
+    float: left;
+  }
+  #tablebody5 {
+    width: 100px;
+    height: 40px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tablebody6 {
+    width: 500px;
+    height: 40px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tablebody7 {
+    width: 90px;
+    height: 40px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+  }
+  #tablebody8 {
+    width: 100px;
+    height: 40px;
+    float: left;
+    border: 1px solid black;
+
+    text-align: center;
+  }
+  #tablebodybox3 {
+    width: 796px;
+    height: 57px;
+    float: left;
+    border: 1px solid black;
+  }
+  #bodybuttonbox {
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-right: 420px;
+  }
+  #tabletotal {
+    float: left;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+  }
+  #tablebodybutton {
+    width: 130px;
+    height: 50px;
+    background-color: #3498db;
+    border-top-left-radius  : 10px;
+    border-top-right-radius : 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  #tabletotaltext {
+    font: normal bold 25px consolas, impect;
+    color: orange;
+  }
+  #checkbox1 {
+    width: 30px;
+    height: 30px;
+  }
+  #tablebodybutton1 {
+    width: 110px;
+    height: 50px;
+    background-color: #5e5e5e;
+    border-top-left-radius  : 10px;
+    border-top-right-radius : 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  #tablebodybutton2 {
+    width: 110px;
+    height: 50px;
+    background-color: #e0e0e0;
+    border-top-left-radius  : 10px;
+    border-top-right-radius : 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  #buttonsection {
+    width: 230px;
+    height: 50px;
+    float: right;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="page">
+      <span id = "number"> 전화번호:010-1234-5678 </span>
+      전국 최고의 <span id = "s1"> 꽃 전문 판매 사이트 </span>
+      <div id="buttonbox">
+        <div id="loginbutton">
+          <a href="login.html">
+            <img src="img/button/login.bmp">
+          </a>
+        </div>
+        <div id="membershipbutton">
+          <a href="membership.html">
+            <img src="img/button/membership.bmp">
+          </a>
+        </div>
+        <div id="basketbutton">
+          <a href="basket.html">
+            <img src="img/button/basket.bmp">
+          </a>
+        </div>
+        <div id="customerbutton">
+          <a href="customercenter.html">
+            <img src="img/button/customer.bmp">
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div id="head1">
+        <div id="logo">
+          <a href="main.html">
+            <div id="logotext1div">
+              <span id="logotext1"> 나도 </span>
+            </div>
+            <div id="logo1">
+              <img src="logo.jpg" width="50" width="50" alt="logo">
+            </div>
+            <span id="logotext2"> 꽃 전문 판매 사이트 </span>
+          </a>
+        </div>
+        <div id="search">
+          <input id="searchtextwindow" type="text" placeholder="검색어 입력">
+          <a href="">
+            <button id="searchbutton" type="submit" value="검색">
+              <img src="img/button/search.bmp">
+            </button>
+          </a>
+        </div>
+        <div id="s2">
+          <span id="q1"> 이달의 베스트 상품 </span>
+        </div>
+        <div id="s3">
+            <li id="q2"><a href="#">1위 카네이션</a>
+              <ul class="depth2">
+                <li id="q3"><a href="#">2위 장미</a></li>
+                <li id="q4"><a href="#">3위 튤립</a></li>
+                <li id="q5"><a href="#">4위 안개꽃</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+      <hr>
+      <div id="head2">
+        <div id="flowerlist">
+          <select id="selectflower" name="flower">
+            <option value="1">결혼/축하</option>
+            <option value="2">승진/취임</option>
+            <option value="3">생일</option>
+            <option value="4">사랑/프로포즈/</option>
+            <option value="5">행사/공연</option>
+          </select>
+        </div>
+          <a href="contents.html">
+            <span id="menulist">
+            꽃바구니
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            꽃 다발/꽃병
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            꽃 상자
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            화분/식물
+          </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            축하화환
+          </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            분재
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            비누꽃
+          </span>
+          </a>
+        </span>
+        <hr>
+      </div>
+  </header>
+
+  <section>
+    <div id="basketcontainer">
+      <div id="basketintro">
+        <span id="baskettext">장바구니</span>
+      </div>
+      <div id="basketsection">
+        <div id="tablehead">
+          <div id="tableheadtext1">
+            <span id="tableheadtext">선택</span>
+          </div>
+          <div id="tableheadtext2">
+            <span id="tableheadtext">상품명</span>
+          </div>
+          <div id="tableheadtext3">
+            <span id="tableheadtext">판매가격</span>
+          </div>
+          <div id="tableheadtext4">
+            <span id="tableheadtext">수량</span>
+          </div>
+        </div>
+        <div id="tablebodybox">
+          <div id="tablebody1">
+            <input id="checkbox1" type="checkbox">
+          </div>
+          <div id="tablebody2">
+            <span id="tablebodytext">고백하는날</span>
+          </div>
+          <div id="tablebody3">
+            <span id="tablebodytext2">33000원</span>
+          </div>
+          <div id="tablebody4">
+            <span id="tablebodytext2">2개</span>
+          </div>
+        </div>
+        <div id="tablebodybox2">
+          <div id="tablebody5">
+            <input id="checkbox1" type="checkbox">
+          </div>
+          <div id="tablebody6">
+            <span id="tablebodytext1">행복바구니</span>
+          </div>
+          <div id="tablebody7">
+            <span id="tablebodytext2">15000원</span>
+          </div>
+          <div id="tablebody8">
+            <span id="tablebodytext2">1개</span>
+          </div>
+        </div>
+        <div id="tablebodybox3">
+          <div id="bodybuttonbox">
+            <button id="tablebodybutton" type="button">
+              <img src="img/button/button18.jpg" alt="선택상품삭제">
+            </button>
+          </div>
+          <div id="tabletotal">
+            <span id="tabletotaltext">총 금액 : 48000원</span>
+          </div>
+        </div>
+        <div id="buttonsection">
+          <button id="tablebodybutton1" type="button">
+            <img src="img/button/button20.jpg" alt="결제하기">
+          </button>
+          <button id="tablebodybutton2" type="button">
+            <img src="img/button/button21.jpg" alt="계속쇼핑">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div id="footer1">
+      <hr>
+      <div id="l1">
+        <span id="info1"> 상호 : 나도 꽃 | 대표 : 이영권 </span> <br>
+        <span id="info2"> 전화번호 : 010-1234-0856 | 사업자 등록번호| 123-456-67890 <br>
+          주소: 서울특별시 구로구 경인로 445</span>
+      </div>
+      <div id = "account" >
+        <span id="info1">입금계좌 안내</span> <br>
+        <span id="info3">NH 농협</span> <span id="info4">123-445-687895</span>     <span id="info5">예금주 : 박혜윤</span><br>
+        <span id="info3">KB 국민은행</span> <span id="info4">1548874-25-85547</span>   <span id="info5">예금주 : 이세라</span></b>
+      </div>
+      <div id="l2">
+        <img src="img/image 1.jpg" width="260" height="60">
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

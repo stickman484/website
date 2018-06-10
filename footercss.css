@@ -1,0 +1,37 @@
+#footer1 {
+  width: 1080px;
+  height: 200px;
+  float: left;
+}
+#l1 {
+  float: left;
+  background-color : orange;
+  width : 390px;
+  height : 90px;
+}
+#account {
+  float: left;
+  margin-left: 20px;
+  background-color: green;
+  width: 400px;
+  height : 90px;
+}
+#info1 {
+   font: normal bold 20px consolas, impect;
+}
+#info2 {font-size : 15px;}
+#info3 {
+  color : white;
+}
+#info4 {
+  color : yellow;
+}
+#info5 {
+  font: normal bold 20px consolas, impect;
+  color : red;
+}
+#l2 {
+  margin-left: 10px;
+  float: left;
+}
+a {text-decoration:none}

@@ -1,0 +1,183 @@
+#page {
+  width: 1090px;
+  height: 100%;
+  margin: 0px;
+}
+header {
+  z-index: 99;
+}
+#number {
+  font: normal bold 16px consolas, sans-serif;
+  padding-right: 180px;
+  animation-name: numbercolor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes numbercolor {
+  0% { color : black; }
+  30% { color: red; }
+  50% { color : blue; }
+  70% { color: yellow; }
+  100% { color : green; }
+  0% { color: black; }
+}
+#s1 {
+  font: normal bold 20px consolas, sans-serif;
+  color: red;
+  padding-right: 120px;
+}
+#buttonbox {
+  width: 250px;
+  float: right;
+}
+#loginbutton {
+  float: left;
+}
+#membershipbutton {
+  float: left;
+}
+#basketbutton {
+  float: left;
+}
+#customerbutton {
+  float: left;
+}
+#head1 {
+  width: 1080px;
+  height: 60px;
+  margin: 0px;
+}
+#logo {
+  margin-left: 50px;
+  float: left;
+  width: 140px;
+  height: 55px;
+  margin-top: 0px;
+}
+#logotext1div {
+  width: 80px;
+  height: 40px;
+  float: left;
+}
+#logotext1 {
+  color: black;
+  font: normal bold 35px consolas, sans-serif;
+  text-align: right;
+}
+#logo1 {
+  width: 30px;
+  height: 40px;
+  float: left;
+  margin-right: 30px;
+}
+#logotext2 {
+  color: red;
+  font: normal bold 13px consolas, sans-serif;
+  text-align: center;
+}
+#search {
+  background-color: black;
+  height: 55px;
+  width: 354px;
+  border: 3px solid #f1c40f;
+  background: #ffffff;
+  margin-left: 120px;
+  float: left;
+}
+#searchtextwindow {
+  font-size: 15px;
+  width: 280px;
+  height: 49px;
+  float: left;
+}
+#searchbutton {
+  width: auto;
+  height: 57px;
+  background-color: #f1c40f;
+  float: left;
+}
+#s2 {
+  float: left;
+  margin-left: 40px;
+  width: 200px;
+  height: 31px;
+  padding: 15px 0px;
+  text-align: center;
+}
+#q1 {
+  color: purple;
+  font: normal bold 20px consolas, sans-serif;
+}
+li{list-style: none;}
+ul{list-style: none;}
+a{ color: inherit; text-decoration: none;}
+#s3 {
+  float: left;
+  width: 150px;
+  height: 40px;
+  margin-left: 10px;
+  border : 3px solid black;
+  margin-top: 7px;
+}
+#q2  {
+  font: normal bold 20px consolas, impect;
+  color: orange;
+}
+#q3 {
+  color: red;
+}
+#q4 {
+  color: blue;
+}
+#q5 {
+  color: green;
+}
+/* 1단계 메뉴 */
+#s3 > li {
+  position: relative;
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+ul.depth2{
+  position: absolute;
+  display: none;
+  border: 3px solid #aaa;
+  background-color: white;
+}
+ul.depth2 li{
+  width: 160px; height: 40px;
+  line-height: 40px;
+  text-align: left;
+  border-bottom: 1px bold #black;
+  background: #fff; color: #333;
+}
+
+#s3:hover{
+  background: #b8d8ee; color: #000;
+}
+
+#s3 > li:hover > ul.depth2{
+  display: block;
+}
+#head2 {
+  width: 1080px;
+  height: 50px;
+  margin: 0px;
+}
+#flowerlist {
+  float: left;
+  width: 210px;
+  height: 42px;
+  margin-right: 60px;
+}
+#selectflower {
+  width: 200px;
+  height: 40px;
+}
+#menulist {
+  font: normal bold 25px consolas, impect;
+  color: black;
+  text-shadow: 2px 2px 2px #8c8484;
+
+}

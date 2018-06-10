@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link href="headercss.css" type="text/css" rel="stylesheet">
+  <link href="footercss.css" type="text/css" rel="stylesheet">
+  <style>
+    #membership {
+      width : 500px;
+      height : 450px;
+      border : 2px solid black;
+      margin-left: 300px;
+      }
+    input {
+       margin-bottom : 10px;
+        }
+    h3 {
+      text-align: center;
+      font: normal bold 20px consolas, impect;
+      }
+    #idcheckbutton {
+      background-color: #e0e0e0;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="page">
+      <span id = "number"> 전화번호:010-1234-5678 </span>
+      전국 최고의 <span id = "s1"> 꽃 전문 판매 사이트 </span>
+      <div id="buttonbox">
+        <div id="loginbutton">
+          <a href="login.html">
+            <img src="img/button/login.bmp">
+          </a>
+        </div>
+        <div id="membershipbutton">
+          <a href="membership.html">
+            <img src="img/button/membership.bmp">
+          </a>
+        </div>
+        <div id="basketbutton">
+          <a href="basket.html">
+            <img src="img/button/basket.bmp">
+          </a>
+        </div>
+        <div id="customerbutton">
+          <a href="customercenter.html">
+            <img src="img/button/customer.bmp">
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div id="head1">
+        <div id="logo">
+          <a href="main.html">
+            <div id="logotext1div">
+              <span id="logotext1"> 나도 </span>
+            </div>
+            <div id="logo1">
+              <img src="logo.jpg" width="50" width="50" alt="logo">
+            </div>
+            <span id="logotext2"> 꽃 전문 판매 사이트 </span>
+          </a>
+        </div>
+        <div id="search">
+          <input id="searchtextwindow" type="text" placeholder="검색어 입력">
+          <a href="">
+            <button id="searchbutton" type="submit" value="검색">
+              <img src="img/button/search.bmp">
+            </button>
+          </a>
+        </div>
+        <div id="s2">
+          <span id="q1"> 이달의 베스트 상품 </span>
+        </div>
+        <div id="s3">
+            <li id="q2"><a href="#">1위 카네이션</a>
+              <ul class="depth2">
+                <li id="q3"><a href="#">2위 장미</a></li>
+                <li id="q4"><a href="#">3위 튤립</a></li>
+                <li id="q5"><a href="#">4위 안개꽃</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+      <hr>
+      <div id="head2">
+        <div id="flowerlist">
+          <select id="selectflower" name="flower">
+            <option value="1">결혼/축하</option>
+            <option value="2">승진/취임</option>
+            <option value="3">생일</option>
+            <option value="4">사랑/프로포즈/</option>
+            <option value="5">행사/공연</option>
+          </select>
+        </div>
+          <a href="contents.html">
+            <span id="menulist">
+            꽃바구니
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            꽃 다발/꽃병
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            꽃 상자
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            화분/식물
+          </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            축하화환
+          </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            분재
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            비누꽃
+          </span>
+          </a>
+        </span>
+        <hr>
+      </div>
+  </header>
+
+<section>
+  <div id="membership">
+    <h3>회원가입</h3>
+    <form name="fo" method="get">
+      <div id = "A1">
+        사용자 ID : <input type="text" size="30" value="">
+           <button id="idcheckbutton"type="submit" value="중복확인">중복확인</button></div>
+      <div id = "B1">
+        비밀번호 : <input type="password" size="30" value=""></div>
+      <div id = "C1">
+        비밀번호 확인 : <input type="password" size="30" value=""></div>
+      <div id = "D1">
+        연락처 : <input type="tel" value=""></div>
+      <div id = "E1">
+        생년월일 : <input type="month" size="30" value=""></div>
+      <div id = "F1">
+        남자<input type="radio" value="1">
+        여자<input type="radio" value="2">
+      </div>
+      <hr>
+      <div id = "G1">
+        <input type="checkbox" value="3"> 전체동의
+      </div>
+      <div id = "H1">
+        <input type="checkbox" value="4"> 약관동의
+        <button id="idcheckbutton" type="submit" value="내용 보기">내용보기</button>
+        <input type="checkbox" value="5"> 개인정보 수집 및 이용 안내
+        <a href="http://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EB%B2%95" target="_blank">
+        <button id="idcheckbutton" type="button" value="내용 보기2">내용보기</button> </a>
+      </div>
+      <div id = "I1">
+        <input type="checkbox" value="6"> 마케팅 수신 동의
+      </div>
+  </div>
+</section>
+
+<footer>
+  <div id="footer1">
+    <hr>
+    <div id="l1">
+      <span id="info1"> 상호 : 나도 꽃 | 대표 : 이영권 </span> <br>
+      <span id="info2"> 전화번호 : 010-1234-0856 | 사업자 등록번호| 123-456-67890 <br>
+        주소: 서울특별시 구로구 경인로 445</span>
+    </div>
+    <div id = "account" >
+      <span id="info1">입금계좌 안내</span> <br>
+      <span id="info3">NH 농협</span> <span id="info4">123-445-687895</span>     <span id="info5">예금주 : 박혜윤</span><br>
+      <span id="info3">KB 국민은행</span> <span id="info4">1548874-25-85547</span>   <span id="info5">예금주 : 이세라</span></b>
+    </div>
+    <div id="l2">
+      <img src="img/image 1.jpg" width="260" height="60">
+    </div>
+  </div>
+</footer>
+</body>
+</html>

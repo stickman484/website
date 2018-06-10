@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+  <link href="headercss.css" type="text/css" rel="stylesheet">
+  <link href="footercss.css" type="text/css" rel="stylesheet">
+  <style>
+    #paywindow {
+      width: 900px;
+      height: 600px;
+      margin-left: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    #paywindow1 {
+      width: 950px;
+      height: 200px;
+      margin-left: 80px;
+      float: left;
+    }
+    #happytext {
+      margin-left: 60px;
+      margin-right: 500px;
+      float: left;
+    }
+    #happy {
+      font: normal bold 40px consolas, sans-serif;
+      color: red;
+    }
+    #imgbox {
+      width: 310px;
+      height: 310px;
+      float: left;
+      border : 3px solid black;
+      margin-top: 10px;
+    }
+    #paytextbox {
+      width: 500px;
+      height: 310px;
+      margin-left: 10px;
+      margin-top: 10px;
+      float: left;
+      background-color: #1abc9c;
+      border : 3px solid #1abc9c;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    #paytextbox2 {
+      width: 130px;
+      height: 180px;
+      margin-top: 8px;
+      text-align: left;
+      float: left;
+      border-right: 3px solid black;
+    }
+    #paytexts1 {
+      display: block;
+      font: normal bold 18px consolas, sans-serif;
+      float: left;
+      margin-bottom: 10px;
+      margin-left: 5px;
+    }
+    #paytexts2 {
+      display: block;
+      font: normal bold 20px consolas, sans-serif;
+      margin-bottom: 10px;
+      float: left;
+      margin-left: 5px;
+    }
+    #paytextbox3 {
+      width: 170px;
+      height: 200px;
+      margin-top: 0px;
+      float: left;
+      margin-right: 80px;
+    }
+    #paytexts3 {
+      display: block;
+      font: normal bold 25px consolas, sans-serif;
+      margin-bottom: 6px;
+      margin-left: 8px;
+      float: left;
+    }
+    #paytexts4 {
+      display: block;
+      font: normal bold 25px consolas, sans-serif;
+      margin-bottom: 6px;
+      color: red;
+      margin-left: 8px;
+      float: left;
+    }
+    #paytexts5 {
+      display: block;
+      font: normal bold 20px consolas, sans-serif;
+      margin-bottom: 6px;
+      float: left;
+      color: orange;
+      margin-left: 8px;
+    }
+    #selectbox {
+      width: 50px;
+      margin-left: 8px;
+      float: left;
+    }
+    #sumbox {
+      float: left;
+      width: 350px;
+      height: 30px;
+      margin-right: 50px;
+    }
+    #paytexts7 {
+          display: block;
+          font: normal bold 35px consolas, sans-serif;
+          margin-bottom: 6px;
+          margin-top: 10px;
+          float: left;
+          color: yellow;
+          margin-left: 8px;
+          margin-right: 10px;
+    }
+    #paytexts6 {
+          display: block;
+          font: normal bold 35px consolas, sans-serif;
+          margin-bottom: 6px;
+          margin-top: 10px;
+          float: left;
+          color: red;
+          margin-left: 50px;
+    }
+    #paybutton1 {
+      background-color: black;
+    }
+    #paybutton2 {
+      background-color: #e67e22;
+    }
+    #flowerpayimg {
+      float: left;
+    }
+    #countselect {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="page">
+      <span id = "number"> 전화번호:010-1234-5678 </span>
+      전국 최고의 <span id = "s1"> 꽃 전문 판매 사이트 </span>
+      <div id="buttonbox">
+        <div id="loginbutton">
+          <a href="login.html">
+            <img src="img/button/login.bmp">
+          </a>
+        </div>
+        <div id="membershipbutton">
+          <a href="membership.html">
+            <img src="img/button/membership.bmp">
+          </a>
+        </div>
+        <div id="basketbutton">
+          <a href="basket.html">
+            <img src="img/button/basket.bmp">
+          </a>
+        </div>
+        <div id="customerbutton">
+          <a href="customercenter.html">
+            <img src="img/button/customer.bmp">
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div id="head1">
+        <div id="logo">
+          <a href="main.html">
+            <div id="logotext1div">
+              <span id="logotext1"> 나도 </span>
+            </div>
+            <div id="logo1">
+              <img src="logo.jpg" width="50" width="50" alt="logo">
+            </div>
+            <span id="logotext2"> 꽃 전문 판매 사이트 </span>
+          </a>
+        </div>
+        <div id="search">
+          <input id="searchtextwindow" type="text" placeholder="검색어 입력">
+          <a href="">
+            <button id="searchbutton" type="submit" value="검색">
+              <img src="img/button/search.bmp">
+            </button>
+          </a>
+        </div>
+        <div id="s2">
+          <span id="q1"> 이달의 베스트 상품 </span>
+        </div>
+        <div id="s3">
+            <li id="q2"><a href="#">1위 카네이션</a>
+              <ul class="depth2">
+                <li id="q3"><a href="#">2위 장미</a></li>
+                <li id="q4"><a href="#">3위 튤립</a></li>
+                <li id="q5"><a href="#">4위 안개꽃</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+      <hr>
+      <div id="head2">
+        <div id="flowerlist">
+          <select id="selectflower" name="flower">
+            <option value="1">결혼/축하</option>
+            <option value="2">승진/취임</option>
+            <option value="3">생일</option>
+            <option value="4">사랑/프로포즈/</option>
+            <option value="5">행사/공연</option>
+          </select>
+        </div>
+          <a href="contents.html">
+            <span id="menulist">
+            꽃바구니
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            꽃 다발/꽃병
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            꽃 상자
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            화분/식물
+          </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            축하화환
+          </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            분재
+            </span>
+          </a>
+          <a href="">
+            <span id="menulist">
+            비누꽃
+          </span>
+          </a>
+        </span>
+        <hr>
+      </div>
+  </header>
+
+  <section>
+    <div id="paywindow">
+      <div id="paywindow1">
+        <div id="happytext">
+          <span id="happy"> 해피투게더 </span>
+        </div>
+        <div id="imgbox">
+          <img src="img/flower 1.jpg" width="300" height="300" alt="꽃">
+        </div>
+        <div id="paytextbox">
+          <div id="paytextbox2">
+            <span id="paytexts2">상품 가격</span>
+            <span id="paytexts1">회원 할인가</span>
+            <span id="paytexts1">적립포인트</span>
+            <span id="paytexts2">배송안내</span>
+            <span id="paytexts2">구매수량</span>
+          </div>
+          <div id="paytextbox3">
+            <span id="paytexts3">52,000원</span>
+            <span id="paytexts4">46,000원</span>
+            <span id="paytexts3">1,100P</span>
+            <span id="paytexts5">전국무료배송</span>
+            <div id="selectbox">
+              <select id="countselect"name="count">
+                <option value="1" selected>1바구니</option>
+                <option value="2">2바구니</option>
+                <option value="3">3바구니</option>
+                <option value="4">4바구니</option>
+                <option value="5">5바구니</option>
+              </select>
+            </div>
+          </div>
+          <div id="sumbox">
+            <span id="paytexts7">합계</span>
+            <span id="paytexts6">46,000원</span>
+          </div>
+          <div id="paybutton">
+            <button id="paybutton1"type="button" value="">
+              <img src="img/button/paybutton1.jpg" width="100px">
+            </button>
+            <button id="paybutton2" type="button" value="">
+              <img src="img/button/paybutton2.jpg" width="100px">
+            </button>
+          </div>
+        </div>
+        <div id="flowerpayimg">
+          <img src="img/flowerpay.jpg"  width="800" height="250" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div id="footer1">
+      <hr>
+      <div id="l1">
+        <span id="info1"> 상호 : 나도 꽃 | 대표 : 이영권 </span> <br>
+        <span id="info2"> 전화번호 : 010-1234-0856 | 사업자 등록번호| 123-456-67890 <br>
+          주소: 서울특별시 구로구 경인로 445</span>
+      </div>
+      <div id = "account" >
+        <span id="info1">입금계좌 안내</span> <br>
+        <span id="info3">NH 농협</span> <span id="info4">123-445-687895</span>     <span id="info5">예금주 : 박혜윤</span><br>
+        <span id="info3">KB 국민은행</span> <span id="info4">1548874-25-85547</span>   <span id="info5">예금주 : 이세라</span></b>
+      </div>
+      <div id="l2">
+        <img src="img/image 1.jpg" width="260" height="60">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
